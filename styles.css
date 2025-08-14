@@ -1,93 +1,167 @@
-body, ul, li, h1, h2,{
+html{
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+}
+body{
     margin: 0;
     padding: 0;
-    font-family: tahoma;
 }
-header{
-  background-color: maroon;
-  padding: 20px 0;
-  text-align: center;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1;
+*{
+   text-decoration: none;
 }
-header h1{
-  color: white;  
+.navbar{
+    background: #666666;
+    font-family: calibri;
+    padding: 15px;
 }
-.Intro{
-    max-width: 100%;
-    width: 1200px;
-    margin: 160px auto;
-    padding: 0px 40px;
-    box-sizing: border-box;
-    background-color: #f9f9f9; 
-    z-index: 1;
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-    .images{
-        text-align: center;
-        margin: 80px 0;
-        white-space: nowrap;
-}
-.images li{
-    display: inline-block;
-    list-style-type: none;
-    width: 40%;
-    margin: 20px 5%;
-    position: relative;
-   
-}
-.images li img{
-    max-width: 100%;
-    
-}
-main{
-   max-width: 100%;
-    width: 1200px;
-    margin: 80px auto;
-    padding: 0px 40px;
-    box-sizing: border-box;
-    background-color: #f9f9f9;
-
-}
-p{
-    font-size: 18px;
-}
-footer{
-    text-align: center;
-    padding: 10px;
-    background-color: maroon;
+.logo{
+    font-size: 35px;
+    font-weight: 600;
     color: white;
 }
-
-/*responsive*/
-@media screen and (max-width: 660px){
-  header{
-  padding: 5px 0;
-  position: fixed;
-  width: 100%;
-  } 
-header h1{
-    font-size: 20px;
+.nav-list li{
+    list-style: none;
+    display: inline-block;
 }
-.images li{
+.nav-list li a{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 25px;
+}
+.nav-list a:hover{
+    color: rgb(217, 224, 224);
+}
+/*Style About*/
+img{
     width: 100%;
-    margin: 20px auto;
-    display: block;
-}
-}
-@media screen and (max-width: 560px) {
-    p{
-        font-size: 15px;
-    }
-header{
-    position: relative;
-}
-.Intro{
-    margin: 100px auto;
-}
+    max-width: 400px;
+    object-fit: cover;
+    vertical-align: middle;
+    
     
 }
+.about-container{
+ padding: 0 15px;
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: space-around;
+ gap: 5rem;
+ background-color: #fdf6f0;
+ margin: 20px;
+ 
+}
+.about-text{
+    flex: 1;
 
+}
+hr{
+    width: 75%;
+    position: center;
+    color:gold;
+    
+}
+/*Style My Projects*/
+.projects{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+#projects h2{
+    text-align: center;
+}
+.project{
+    background: white;
+    width: 270px;
+    height: 400px;
+    margin: 10px;
+}
+.card-image{
+    background-color: aqua;
+    height: 50%;
+    margin-bottom: 15px;
+    background-size: cover;
+}
+.contact-list{
+    background-image: url('imgs/IMG_20250814_195254.jpg');
+}
+.calculator{
+    background-image: url('imgs/IMG_20250814_195319.jpg');
+}
+.zoo-app{
+    background-image: url('imgs/IMG_20250814_195052.jpg');
+}
+.shopping-card{
+    background-image: url('imgs/IMG_20250814_201257.jpg');
+}
+.project h2{
+    padding: 10px;
+}
+.project p{
+    padding: 10px;
+}
+.project a{
+    background-color: wheat;
+    color: black;
+    padding: 10px 15px;
+    display: block;
+    text-align: center;
+    margin-top: auto;
+    align-self: flex-start;
+    text-decoration: none;
+}
 
+.project:hover{
+    background-color: rgb(62,62,62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transform: all 1s ease;
+}
+/*Skills*/
+#skills h2{
+    text-align: center;
+}
+#skills{
+    margin: 20px;
+    margin-top: 15px;
+    background-color: #fdf6f0;
+    padding: 15px 20px;
+}
+.skills-list{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding: 0;
+}
+.skills-list li{
+display: flex;
+align-items: center;
+margin-bottom: 1rem;
+flex-direction: column;
+}
+.skills-list img{
+    width: 100px;
+    margin: 20px;
+    
+}
+footer{
+    display: flex;
+    background-color: #666666;
+    color: white;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+ul{
+    list-style: none;
+}
